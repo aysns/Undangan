@@ -1,65 +1,187 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orang dan Orang Wedding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Orang dan Orang Wedding</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap"
-    rel="stylesheet">
+    <!-- simply countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
 
-  <!-- simply conutdown -->
-  <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
-  <script src="countdown/simplyCountdown.min.js"></script>
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Glen & Maysarah</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam :</p>
+        <div class="simply-countdown"></div>
+        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">GM Wedding</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              GM Wedding
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gift">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 13 Maret 2030 di Bireun, Aceh Utara</h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami bermaksud untuk
+              mengundang Bapak/Ibu,Sudara/i untuk hadir pada acara pernikahan
+              kami,
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <!--tulisan disebelah kiri di kolom pertama, ukurannya lbh bsr-->
+                <h3>Glen Agustin</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam quae sequi qui nisi soluta? Harum necessitatibus
+                  accusantium architecto quod rem. Vitae impedit neque enim odio
+                  cumque dolore quis maxime nihil!
+                </p>
+                <p>
+                  Putra dari Bpk. gaktau <br />
+                  dan <br />
+                  Ibu Gaktau
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/glen.jpg"
+                  alt="Glen"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
 
 
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <section id="hero"
-    class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
-    <main>
-      <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
-      <h1>Glen & Maysarah</h1>
-      <p>Akan melangsungkan resepsi pernikahan dalam : </p>
-      <div class="simply-countdown"></div>
-      <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
-    </main>
-  </section>
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
 
 
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/maya.jpg"
+                  alt="Maysarah"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <!--tulisan disebelah kiri di kolom pertama, ukurannya lbh bsr-->
+                <h3>Maysarah</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam quae sequi qui nisi soluta? Harum necessitatibus
+                  accusantium architecto quod rem. Vitae impedit neque enim odio
+                  cumque dolore quis maxime nihil!
+                </p>
+                <p>
+                  Putri dari Bpk. Muhammad Tahir <br />
+                  dan <br />
+                  Ibu Mursyida
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-
-  <script>
-   // simplyCountdown('.countdown', {}); //parameter pertama elemennya yang mana, parameter kedua bentuknya objek, kurung kurawal buka tutup kosong menandakan default
-    simplyCountdown('.simply-countdown', {
-      year: 2030, // required
-      month: 3, // required
-      day: 13, // required
-      hours: 8, // Default is 0 [0-23] integer
-      words: { //words displayed into the countdown
-        days: { singular: 'hari', plural: 'hari' },
-        hours: { singular: 'jam', plural: 'jam' },
-        minutes: { singular: 'menit', plural: 'menit' },
-        seconds: { singular: 'detik', plural: 'detik' }
-      },
-     
-    });
-
- </script>
-
-</body>
-
+    <script>
+      // simplyCountdown('.countdown', {}); //parameter pertama elemennya yang mana, parameter kedua bentuknya objek, kurung kurawal buka tutup kosong menandakan default
+      simplyCountdown(".simply-countdown", {
+        year: 2030, // required
+        month: 3, // required
+        day: 13, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+  </body>
 </html>
